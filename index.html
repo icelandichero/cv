@@ -3,12 +3,74 @@
     <head>
         <meta charset="utf-8">
         <title>Kjartan's Personal Site</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
 
     <body>
-        <h1>Icelandic Hero</h1>
-        <p><em>Brother and Supporter of <strong><a href="https://www.eatup.is">EatUP</a></strong></em></p>
-        <p>I am Grandmaster 271 LP in League of Legends.</p>
+
+        <div class="top" id="top">
+            <nav class="top-nav" style="height: 3rem">
+                <a class="top-bar-logo" href="contact.html">
+                    <img class="logo-style" src="img/homelogo.png" alt="home logo" title="Home">
+                </a>
+                <a id="productButton" class="top-bar-button" href ="products.html" title="Products">PRODUCTS</a>
+                <a id="hide-button-3" class="top-bar-button" href="mittens.html" title="Mittens">MITTENS</a>
+                <a id="hide-button-2" class="top-bar-button" href="patterns.html" title="Patterns">PATTERNS</a>
+                <a id="hide-button-1" class="top-bar-button" href="about.html" title="About">ABOUT</a>
+
+                <a href="javascript:void(0);" class="icon" onclick="mobileFunction()">
+                    <img id="menuButton"class="menu-style" src="img/homelogo.png" alt="home logo" title="Home">
+                </a>
+            </nav>
+
+
+        </div>
+        <div id="mobile-links" style="display: none;">
+            <a class="hidden-menu" href="mittens.html">Mittens</a>
+            <a class="hidden-menu" href="patterns.html">Patterns</a>
+            <a class="hidden-menu" href="about.html">About</a>
+        </div>
+
+        <div class="mid">
+            <div class="landing-background">
+                <div id="front-image-style">
+                    <img id="image-style-1" class="image-style-1" src="img/mittens-rose1.jpg">
+                </div>
+                <div class="front-image-style">
+                    <img id="image-style-1" class="image-style-1" src="img/mittens-butterfly1.jpg">
+                </div>
+                <div class="front-image-style">
+                    <img id="image-style-1" class="image-style-1" src="img/mittens-herd1.jpg">
+                </div>
+                <div class="front-title">
+                    <div class="front-text">
+                        <h1>Traditional Icelandic Knitting</h1>
+                        <h2>High quality mittens and more knitted with love by
+                            <span>Kristín Örnólfsdóttir.</span>
+                        </h2>
+                        <a href="products.html" title="Products">
+                            <button>Products</button>
+                        </a>
+                    </div>
+                    <div class="download-buttons">
+                        <div class="icon-style">
+                            <a target="_blank" href="https://instagram.com/kristinornolfs" title="Instagram">
+                                <img src="" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Featured Products">
+
+            </div>
+        </div>
+
+        <div class="bot">
+
+        </div>
+
         <hr>
         <h3>List of my Achievments</h3>
         <ul>
@@ -31,10 +93,13 @@
             </tbody>
         </table>
         <hr>
-        <a href="na.op.gg/summoner/userName=Icelandic Hero">Main Account</a>
+        <a href="https://na.op.gg/summoner/userName=Icelandic%20Hero">Main Account</a>
         <a href="https://na.op.gg/summoner/userName=ScandinavianSkum">Smurf Account 1</a>
         <a href="https://na.op.gg/summoner/userName=TwitchTv%20Kyardan">Smurf Account 2</a>
         <hr>
         <a href="contact.html">Contact Me</a>
+
+        <script src="imagetransition.js"></script>
+        <script src="javascript.js"></script>
     </body>
 </html>
